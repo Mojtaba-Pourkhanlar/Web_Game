@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Box, Flex, Grid, GridItem, HStack, Show } from '@chakra-ui/react'
+import { useState } from 'react'
+import { Box, Flex, Grid, GridItem, Show } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
 import GameGrid from './components/GameGrid'
 import GenreList from './components/GenreList'
@@ -8,8 +8,6 @@ import PlatformSelector from './components/PlatformSelector'
 import { Platform } from './hooks/useGames'
 import SortSelector from './components/SortSelector'
 import GameHeading from './components/GameHeading'
-
-
 export interface GameQuery {
   genre: Genre | null;
   platform: Platform | null;
@@ -19,8 +17,6 @@ export interface GameQuery {
 
 const App = () => {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery)
-
-
   return (
     <Grid templateAreas={{
       base: `"nav" "main"`,
