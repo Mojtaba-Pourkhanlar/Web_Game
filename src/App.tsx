@@ -20,7 +20,7 @@ const App = () => {
     >
       <GridItem area="nav" ><Navbar /></GridItem>
       <Show above='lg'>
-        <GridItem area="aside" paddingX={5}><GenreList onSelectGenre={(genre) => setSeletedGenre(genre)} /></GridItem>
+        <GridItem area="aside" paddingX={5}><GenreList selectedGenre={seletedGenre} onSelectGenre={(genre) => setSeletedGenre(genre)} /></GridItem>
       </Show>
       <GridItem area="main"><GameGrid selectGenre={seletedGenre} /></GridItem>
     </Grid>
