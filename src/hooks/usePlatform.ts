@@ -1,4 +1,3 @@
-import React from "react";
 import usePlatforms from "./usePlatforms";
 
 const usePlatform = (id?: number) => {

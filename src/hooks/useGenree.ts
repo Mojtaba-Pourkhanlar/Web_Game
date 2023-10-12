@@ -1,3 +1,5 @@
+// this useGenre component
+
 import useGenre from "./useGenre";
 
 const useGenree = (id?: number) => {
