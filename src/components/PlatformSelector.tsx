@@ -9,15 +9,15 @@ interface Props {
 }
 
 const PlatformSelector = ({ onSelecPlatform, selectedPlatform }: Props) => {
-    const { data, error, loading } = usePlatforms()
+    const { data, error, isLoading } = usePlatforms()
     if (error) return null
     return (
         <Menu>
             <MenuButton as={Button} rightIcon={<BsChevronDown />}>{selectedPlatform?.name || "Platform"}</MenuButton>
             <MenuList>
                 {
-                    loading ? <Spinner /> :
-                        data.map((platform) =>
+                    isLoading ? <Spinner /> :
+                        data?.results.map((platform) =>
                             <MenuItem onClick={() => onSelecPlatform(platform)} key={platform.id}>{platform.name}</MenuItem>
                         )
                 }
