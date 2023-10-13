@@ -1,4 +1,4 @@
-import { Platform } from '../hooks/usePlatforms'
+import { Platform } from "../entities/Platform"
 import { SiNintendo } from "react-icons/si"
 import { MdPhoneIphone } from "react-icons/md"
 import { BsGlobe } from "react-icons/bs"
