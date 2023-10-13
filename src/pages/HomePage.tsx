@@ -23,9 +23,6 @@ const HomePage = () => {
                 lg: "200px 1fr"
             }}
         >
-            {/* <GridItem area="nav" >
-        <Navbar onSearch={(searchText) => setGameQuery({ ...gameQuery, searchText })} />
-      </GridItem> */}
             <Show above='lg'>
                 <GridItem area="aside" paddingX={5}><GenreList selectedGenreId={gameQuery.genreId} onSelectGenre={(genre) => setGameQuery({ ...gameQuery, genreId: genre.id })} /></GridItem>
             </Show>
